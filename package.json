@@ -1,0 +1,15 @@
+{
+  "name": "madeleine-frontend",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "esbuild --bundle src/main.tsx --outfile=public/main.js",
+    "start": "yarn run build -- --servedir=public"
+  },
+  "dependencies": {
+    "esbuild": "^0.14.39",
+    "react": "^18.1.0",
+    "react-dom": "^18.1.0"
+  }
+}
